@@ -9,11 +9,12 @@ li{list-style-type: none;}
     border: 1px solid gray; 
     width: 400px;
 }
-
+/* 2. 제품 이미지 */
 .ping{width: 400px;
 
 
 }
+/* 3. 제품명 */
 .ptitle{
     
     font-size: 30px;
@@ -24,6 +25,7 @@ li{list-style-type: none;}
 
 
 }
+/* 4. 가격 */
 .pprice{
 padding: 10px;  font-weight: bold;
 

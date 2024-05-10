@@ -1,0 +1,29 @@
+.bookimg{
+
+    width: 300px; height: 400px;
+}
+.titlenum{
+    color: orange;
+    font-size: 30px;
+    display: inline;
+
+}
+.contents{
+
+    background-color: beige;
+    width: 500px;
+    padding: 30px 20px ;
+    
+}
+.contents >li{
+
+    list-style-type: none;
+}
+.point{
+
+color: orange;
+font-weight: bold;
+
+}
+
+

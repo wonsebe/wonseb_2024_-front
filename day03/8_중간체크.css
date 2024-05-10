@@ -5,24 +5,30 @@
 li{
     list-style-type: none;
 }
-ul{border: 1px solid gray;
+ul{border: 1px solid rgb(201, 196, 196);
     text-align: center; 
     width:300px;
     margin:10px;
 
 }
-.img_instagram{ width: 100px;
+.img_instagram{ width: 150px;
     padding-top: 30px;
 
 }
 .id{ width :270px;
     height: 30px;
    margin-top: 20px;
+   border:1px solid rgb(201, 196, 196);
+   border-radius: 3px;
+   padding: 4px;
 }
 .password{
     width :270px;
     height: 30px;
     margin-top: 5px;
+    border:1px solid rgb(201, 196, 196);
+    border-radius: 3px;
+    padding: 4px;
 }
 
 .login{
@@ -36,6 +42,7 @@ ul{border: 1px solid gray;
     font-weight: bold;
     margin-top: 5px;
 
+
 }
 
 .img_facebook{
@@ -43,7 +50,7 @@ ul{border: 1px solid gray;
 }
 .route{
     font-weight: bold;
-    color: blue;
+    color: rgb(4, 84, 175);
     font-size: 13px;
     line-height: 50px;
 
@@ -51,26 +58,29 @@ ul{border: 1px solid gray;
 }
 .forget{
 font-size: 10px;
+line-height: 50px;
 }
 
 
 .email{
-    border: 1px solid gray; 
+    border: 1px solid rgb(201, 196, 196); 
     margin-left: 10px;
     width: 300px;
     height: 50px;
     text-align: center;
     padding-top: 30px;
+    font-size: 13px;
 }
 
 .sign{
    color: #0095F6;
    font-weight: bold;
+   font-size: 12px;
    
 }
 
 a{
     text-decoration: none; /* 밑줄 제거 */
-    color: blue;  /* 글꼴 색상 */
+    color: rgb(4, 84, 175);  /* 글꼴 색상 */
     
 }

@@ -10,7 +10,7 @@ display: flex; border: 3px solid red;
 
 }
 #flexbox1{
-    justify-content: first baseline; /*[기본값]: 왼쪽ㅂ터 정렬 */
+    justify-content: first baseline; /*[기본값]: 왼쪽부터 정렬 */
 }
 #flexbox2{justify-content: flex-end;}/*오른쪽 부터 정렬*/
 #flexbox3{justify-content: center;} /*가운데 정렬 */

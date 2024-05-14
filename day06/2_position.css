@@ -1,0 +1,57 @@
+#header{
+    display: flex;
+    border-bottom: 2px solid gray; background-color: white;
+    position: sticky; /*해당 구역이 가져질때 위치 고정*/
+    top: 0px; /*상단 고정*/
+    z-index: 3; /*다른 요소와 겹쳤을 때 배치 우선순위 */
+}
+
+#header >ul {display: flex;}
+
+#popup{
+    background-color: skyblue; color: white;
+    width: 200px; height: 200px; border-radius: 10px;
+    position: fixed;
+    bottom: 50px; right: 10px;
+    z-index: 3;
+}
+
+
+
+
+/*========================-=============*/
+.parent{background-color:skyblue;
+    width: 500px ; height: 500px; margin: 0 auto;
+    position: relative;
+}
+
+
+.parent >div{
+    width: 100px; height: 100px;
+    background-color: yellow;
+    position: absolute;
+}
+
+.box1{
+ top: 25px; left: 200px;/*부모 위치 따라감 */
+
+   
+}
+.box2{ top: 125px; left: 75px;
+
+}
+.box3{ top: 125px; left: 325px;
+
+}
+.box4{ top: 250px; left: 75px;
+
+}
+.box5{ top: 250px; left: 325px;
+
+}
+.box6{ top: 360px; left: 200px;
+
+}
+
+
+

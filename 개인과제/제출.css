@@ -1,0 +1,176 @@
+/*기본사항---------------------*/
+*{
+    padding: 0px; margin: 0px;
+    box-sizing: border-box;
+    
+    
+    }
+    a{
+    color: black;
+    text-decoration: none;
+    }
+    li{list-style-type: none;}
+    
+    /*----------기본작업, 레이아웃------------------*/
+    
+    #header{ width: 100%;}
+    #content{width: 1600px; margin: 0 auto;}
+    #footer{width: 100%;}
+    
+    
+    /*---------------------헤더 시작-------------------*/
+    #topMenu{
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px;
+        font-size: 12px;
+        font-family: "ProximaNova-Regular";
+        border-bottom: 1px solid #dbdbdb;
+      
+        
+    }
+    #topMenu>li.img{width: 20px; margin: 2px 20px 0px 0px;}
+    #topMenu>li>span{ padding: 0px 15px;
+    }
+    
+    #topMenu > li img{
+        margin:2px 20px 0px 0px;
+        width: 19px;
+    }
+    #mainMenu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 40px;
+    
+    }
+    #mainMenu .discount{color: red;}
+    
+    #mainMenu .logo{width: 160px;}
+    
+    #mainMenu>img{width: 5px;}
+    
+    #mainMenu>ul{
+        display: flex;
+        width: 80%;
+        padding: 0px 15px;
+    }
+    
+    #mainMenu>ul>li{
+        width: 80px; height: 80px;
+        display: flex; justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        font-family: 'Noto Sans KR';
+        padding: 0px 15px;
+    }
+    #searchBox >img{width: 15px;}
+    
+    #searchBox >input{ 
+        width: 130px; 
+        padding: 5px; 
+        border: none;
+    }
+    #searchBox{border-bottom: 1px solid black;}
+    *:focus{outline: none;}
+    
+    #topMenu>li{position: relative;}
+    .event{position: absolute;
+      background-color: #ffffff;   
+      text-align: center;
+      display: none; 
+      
+    }
+    .event>li{ padding:0px 50px 10px 0px;
+               text-align: center; 
+    }
+    #topMenu> li:hover .event{display: block;}
+    
+    
+    
+    
+    #mainMenu>ul>li{position: relative;}
+    #mainMenu .submenu{
+        position: absolute;
+        display: none;
+        text-align: center;
+        background-color: white;
+    }
+    #mainMenu .submenu > li{ margin:20px;}
+    #mainMenu > ul > li:hover .submenu{ display: block;}
+    
+    .mainImg{ width: 100%;}
+
+
+#mainMenu{
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    opacity: 80%;
+}
+
+
+    
+    #content > .title
+    {
+        margin-top: 50px;
+        font-size: 17px; 
+        text-align: center; 
+        font-weight: bold;
+    }
+    
+    #content > .hot{
+        text-align: center;
+        color: #999999;
+        margin: 20px 0px;
+        font-size: 10px;
+    }
+
+    #Items > .Item{
+        width: 380px ; margin: 30px 0px;
+    }
+
+    #Items > .Item > .Itemimg{
+        width: 100%;
+    }
+#Items .colorcollect{ 
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0px;
+}
+    #Items.color> span{
+        width: 10px; height: 10px;
+        display: inline-block;
+        border: 1px solid #dbdbdb;
+
+    }
+
+    #Items .review{
+        color: #999999;
+    }
+    #Items .itemName{
+        margin: 5px 0px;
+    }
+    
+
+
+  
+    #mainBanner{
+        display: flex;
+        width: 30px;
+        margin-top: 180px;
+        padding: 0px 80px;
+    }
+    #mainBanner> .oneImg{
+        padding: 0px 20px;
+
+    }
+    #mainBanner> .twoImg{
+        padding: 0px 20px;
+
+    }
+    #mainBanner> .threeImg{
+        padding: 0px 20px;
+
+    }
+

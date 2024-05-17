@@ -53,7 +53,7 @@
     #mainMenu>ul{
         display: flex;
         width: 80%;
-        padding: 0px 15px;
+       
     }
     
     #mainMenu>ul>li{
@@ -73,19 +73,30 @@
     }
     #searchBox{border-bottom: 1px solid black;}
     *:focus{outline: none;}
-    
+    /*---------------------탑메뉴 드롭다운------------------------*/
     #topMenu>li{position: relative;}
+
     .event{position: absolute;
-      background-color: #ffffff;   
+      background-color: white;   
       text-align: center;
       display: none; 
+      width: 80%;
+      top: 30px;
+      z-index: 2;
+        
       
     }
-    .event>li{ padding:0px 50px 10px 0px;
-               text-align: center; 
+    .event>li{ margin:10px;
+               text-align: center;
+               align-items: center; 
+               font-size: 8px;
+               font-weight: bold;
+               
     }
     #topMenu> li:hover .event{display: block;}
     
+
+    /*------------------------메인드롭다운---------------------------------*/
     
     
     
@@ -95,22 +106,24 @@
         display: none;
         text-align: center;
         background-color: white;
+        width: 130%;
+        top: 80px;
     }
-    #mainMenu .submenu > li{ margin:20px;}
+    #mainMenu .submenu > li{ margin:10px;}
     #mainMenu > ul > li:hover .submenu{ display: block;}
     
-    .mainImg{ width: 100%;}
+/*-------------------헤더 고정------------------------------------*/
 
-
-#mainMenu{
+   #mainMenu{
     position: sticky;
     top: 0px;
     background-color: white;
     opacity: 80%;
-}
+    }
 
 
-    
+    /*==================헤더끝===본문시작=========================*/
+    .mainImg{ width: 100%;}
     #content > .title
     {
         margin-top: 50px;
@@ -126,35 +139,9 @@
         font-size: 10px;
     }
 
-    #Items > .Item{
-        width: 380px ; margin: 30px 0px;
-    }
+   
 
-    #Items > .Item > .Itemimg{
-        width: 100%;
-    }
-#Items .colorcollect{ 
-    display: flex;
-    justify-content: space-between;
-    margin: 5px 0px;
-}
-    #Items.color> span{
-        width: 10px; height: 10px;
-        display: inline-block;
-        border: 1px solid #dbdbdb;
-
-    }
-
-    #Items .review{
-        color: #999999;
-    }
-    #Items .itemName{
-        margin: 5px 0px;
-    }
-    
-
-
-  
+  /*-------------------중간이미지--------------------*/
     #mainBanner{
         display: flex;
         width: 30px;
@@ -173,4 +160,103 @@
         padding: 0px 20px;
 
     }
+/*---------------------------------------------------*/
+    #Items > .Item{
+        width: 380px ; margin: 30px 0px;
+    }
 
+    #Items > .Item > .Itemimg{
+        width: 100%;
+    }
+    #Items .colorcollect{ 
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0px;
+    }
+    #Items .color> span{
+        width: 10px; height: 10px;
+        display: inline-block;
+        border: 1px solid #dbdbdb;
+
+    }
+
+    #Items .review{
+        color: #999999;
+    }
+    #Items .itemName{
+        margin: 5px 0px;
+    }
+    
+    #Items .itemName >.Size{
+        font-size: 10px; color: #999999; margin: 1px 0px;
+    }
+    #Items .itemPrice{ position: relative; margin: 5px 0px;}
+    #Items .disc{
+        position: absolute; right: 0px; top: 0px;
+        font-size: 15px; color: red; font-weight: bold;
+
+    }
+    #Items .price{ 
+        text-decoration: line-through;
+        color: #999999;
+
+       
+    }
+    #Items{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+/*----------------------본문 끝 푸터시작-------------------*/
+    #footer{
+        margin-top: 100px;
+    }
+    #footerBottom{
+        text-align: center;
+        font-size: 10px;
+        color: #999999;
+        line-height:  160%;
+        margin: 30px 0px;
+    }
+    #footerTop{
+        background-color: #f7f7f7;
+    }
+
+    #footerContent{
+        width: 1400px; margin: 0 auto;
+        display: flex; justify-content: space-between;
+        padding: 50px 100px;
+
+    }
+    #footerContent h3{margin: 10px 0px; font-size: 16px; font-weight: bold;}
+    #footerContent h4{margin: 10px 0px; font-size: 18px; font-weight: bold;}
+    #footerContent ul> li{margin-bottom: 10px;}
+
+/*----------------푸터 끝 팝업------------------------------*/
+    #popup{
+        position: fixed;
+        right: 0px; top: 30%;
+    }
+    #popup img{
+        width: 20px;
+    }
+    #popup > ul >li{
+        padding: 10px;
+        border: 1px solid #dbdbdb;
+        background-color: #f7f7f7;
+        position: relative;
+    }
+    #popup >ul>li>span{
+        position: absolute; top: 10px; right: 40px;
+        display: none;
+        width: 80px; height: 20px;
+        background-color: black;
+        color: white;
+        border-radius: 5px; text-align: center;
+    
+    }
+    #popup >ul> li:hover .popupSub{
+        display: inline;
+    }

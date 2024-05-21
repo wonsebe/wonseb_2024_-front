@@ -1,0 +1,152 @@
+*{  font-size: 16px;
+    padding: 0px; margin: 0px;
+    font-size: 10px; box-sizing: border-box;
+}
+li{list-style-type: none;}
+a{color: black; text-decoration: none;}
+
+#header{width: 100%;}
+#content{width: 1400px; margin: 0 auto;}
+#footer{width: 100%;}
+
+
+#bottomHeader{
+    background-color: black;
+     height: 60px;
+}
+.recommend{
+    color: white;
+    text-align: center;
+    margin-right:1200px ;
+    padding-top:19px ;
+    font-size: 14px;
+    
+}
+
+
+#mainStory{
+
+    font-size: 16px;
+    padding-top: 55px;
+  
+}
+.list {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding-right: 120px;
+    padding-top: 80px;
+
+}
+
+.Brand{
+    font-size: 40px;
+    padding-top: 80px;
+   
+}
+
+ .mainStory {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px;
+}
+
+.mainStory .li1 {
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness:3px;
+    text-underline-offset:7px;
+    padding: 0px 15px;
+    font-size: 16px;
+}
+.mainStory .li2{
+    font-size: 16px;
+    padding: 0px 15px;
+    color: #B8B8B8;  
+}
+a:hover .li2{
+    color: black; font-weight: bold;
+} 
+
+#mainStage{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+
+
+
+.Brimg{
+   padding: 30px;
+   width: 100%;
+}
+
+#mainStage > p{
+ padding: 20px;
+ font-size: 18px;
+ text-align: left;
+
+ font-weight: bold;
+
+ padding-top:10px ;
+ line-height: 30px;
+ 
+}
+
+
+
+.br{
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    padding: 100px;
+   
+    
+   
+}
+
+.br1{
+    font-size: 24px;
+    background-color:#f2f0f0;
+    border: 2px solid black ;
+    width: 1000px; height: 80px;
+    border-bottom: 0;
+    padding-right: 195px;
+    padding-left: 195px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    
+}
+.br2{
+    font-size: 24px;
+    background-color: #f2f0f0;
+    border: 2px solid black ;
+    padding-right: 195px;
+    padding-left: 195px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+}
+.BURGERKING{
+    display: flex;
+    justify-content: center;
+   
+}
+.BURGERKING > li{
+    font-size: 40px;
+    font-weight: bold;
+    padding-right: 50px;
+    padding-top: 20px;
+}
+.BURGERKING > p{
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 30px;
+    text-align: left;
+    padding: 30px;
+    
+}

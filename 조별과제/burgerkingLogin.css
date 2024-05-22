@@ -450,4 +450,58 @@ a{
     font-weight: bold;
 }
 
+/*푸터*/
+#topFooter, #btmFooterBG {background-color: #2b0200; color: #bba391;}
+#topFooter > ul {display: flex; width:1144px; height:388px; padding-top: 50px; margin: 0 auto; border-bottom: 1px solid #bba391;}
+
+#topFooter > ul > li {width:228px; height:299px; }
+
+.ftMenubig {
+    font-family: "KCC-Ganpan" !important ; 
+    font-size: 24px; margin-bottom: 5px; 
+    color: #f5ebdc !important;
+}
+.footerMenu > li {margin-bottom: 10px;}
+.footerMenu > li > a {color: #bba391; font-family: "Malgun Gothic"; font-weight: bold;}
+
+#footerSocial > a > img {height: 20px; margin-top: 30px;}
+
+#btmFooter {
+    display: flex; 
+    width:1144px; height:388px; 
+    margin: 0 auto; padding-top:50px;
+    justify-content: space-between;
+}
+#btmFooterleft > p, #btmFooterleft > p > a {
+    font-family: "Malgun Gothic" !important;
+    color: #bba391 !important; 
+    font-weight: bold; font-size: 14px;
+}
+#btmFooterright > a {
+    font-family: "Malgun Gothic" !important; 
+    color: #bba391 !important; 
+    font-weight: bold; font-size: 14px;
+}
+#btmFooterright > div > div > a {
+    font-family: "Malgun Gothic" !important; 
+    color: #f5ebdc !important;
+    font-weight: bold; font-size: 14px;
+}
+#btmFooterleft > img {margin-bottom: 30px; margin-right: 10px;}
+#btmFooterleft > a {margin-bottom: 10px;}
+
+
+#btmFooterright {text-align: right;}
+#btmFooterright > div {display: flex; justify-content: right; margin-top: 15px;}
+#btmFooterright > span { margin: 0 5px; opacity: .3;}
+#footerBtn > a { 
+    display: inline-block;
+    width: 115px; height: 30px; 
+    border: 1px solid #bba391; 
+    border-radius: 16px;
+    text-align: center;
+    line-height: 30px;
+}
+
+
 

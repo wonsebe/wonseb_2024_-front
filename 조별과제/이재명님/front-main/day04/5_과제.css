@@ -1,0 +1,128 @@
+*{  margin: 0px; padding: 0px; list-style-type: none;
+    box-sizing: border-box;
+}
+body{    background-color: black;}
+
+a{text-decoration: none;}
+
+
+#header{
+    width: 1280px;
+    margin: 20px auto;
+   align-items: center;
+    display: flex; justify-content: space-between;
+    
+}
+
+#lefthead > img{
+    
+    width: 80px;
+}
+
+#midhead > input{
+    background-color: white;
+    width: 600px;
+    height: 25px;
+    border-radius: 8px;
+    
+}
+
+
+
+#rightmenu{
+    display: flex;
+    
+}
+
+#rightmenu > li{
+    
+    padding-left: 30px;
+    font-weight: bold;
+    
+    
+    
+
+}
+
+#rightmenu > li > a{text-decoration: none; color: white;
+                    
+}
+
+#footer{
+    margin: 30px auto;
+}
+
+#topfooter{
+    display: flex; justify-content: center;
+    padding: 10px;
+}
+
+#topfooter>li{padding: 0 15px;}
+
+#topfooter > li > a{text-decoration: none; color: white;}
+
+#bottomfooter{
+    display: flex; justify-content: center;
+    padding: 10px;
+}
+
+#bottomfooter > li{padding: 0 15px}
+
+#bottomfooter > li > a{text-decoration: none; color: white;}
+
+#content{
+    background: linear-gradient(rgb(103, 105, 105), rgb(9, 12, 14), black);
+    width: 1280px;
+    margin: 0 auto;
+}
+#content > p{
+    font-size: 80px;
+    margin: 0px;
+    color: white;
+}
+#contentInfo{
+    font-size: 20px;
+    line-height: 50%;
+    line-height: 150%;
+    color: gray;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+#contentMedia > img{
+    width: 300px;
+}
+#contentMedia{
+    display: flex;
+    justify-content: space-around;
+}
+#contentBox{
+    display: flex;
+    align-items: flex-end;
+    width: 200px; height: 500px;
+}
+#contentBox > a{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+#box{
+    color: white;
+    font-size: 25px;
+    padding: 20px 0px;
+    
+}
+
+#aside{
+    color: white;
+    list-style-type: none;
+    padding-left:0px ;
+    font-size: 25px;
+    font-weight: bold;
+}
+#aside > li{
+    border-bottom: 1px solid gray;
+    padding: 20px 0px;
+}
+#aside > li > a{
+    color: rgb(115, 115, 199);
+}

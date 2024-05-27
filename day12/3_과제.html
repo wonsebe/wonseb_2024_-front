@@ -6,51 +6,52 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='3_과제.css'>
-    
+    <style>
+        .pink{
+            background-color: pink;
+        }
+        .black{
+            background-color: black;
+        }
+    </style>
 </head>
 <body>
-    <div id="wrap">
- 
-    <h3> MY ToDo List </h3>
-    <div id="ddd">
-    <input id="inf" type="text" id="todoInput"/>
-    <button onclick="add()" type="button" id="dd">등록</button>
+    <div id="warp">
+        <div id="a">
+        <h3> MY ToDo List </h3>
     </div>
- 
+        <div id="ddd">
+            <input type="text" id="todoInput"/>
+            <button onclick="add()" type="button" id="dd" >등록</button>
+        </div>
 
-
-    <ul id="ulli">
-        <li>
-            1교시 수업듣기
-            <div>
-                <button onclick="" type="button">변경</button>
-                <button onclick="" type="button">삭제</button>
-            </div>
-        </li>
-        <li>
-            밥먹기
-            <div>
-                <button onclick="" type="button">변경</button>
-                <button onclick="" type="button">삭제</button>
-            </div>
-        </li>
-        <li>
-            공부하기
-            <div>
-                <button onclick="" type="button">변경</button>
-                <button onclick="" type="button">삭제</button>
-            </div>
-        </li>
-        
-        
-
-    
-    </ul>
+        <ul id="ulli">
+            <li class="pink">
+                <p>1교시 수업듣기</p>
+                <div>
+                    <button onclick="change()" type="button">변경</button>
+                    <button onclick="remove()" type="button">삭제</button>
+                </div>
+            </li>
+            <li class="pink">
+                <p>밥먹기</p>
+                <div>
+                    <button onclick="change()" type="button">변경</button>
+                    <button onclick="remove()" type="button">삭제</button>
+                </div>
+            </li>
+            <li class="pink"> 
+                <p>공부하기</p>
+                <div>
+                    <button onclick="change()" type="button">변경</button>
+                    <button onclick="remove()" type="button">삭제</button>
+                </div>
+            </li>
+        </ul>
     </div>
+
+
+
     <script src='3_과제.js'></script>
-
-
-
-
 </body>
 </html>

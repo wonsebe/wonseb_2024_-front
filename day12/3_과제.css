@@ -1,46 +1,34 @@
-
-
-*{   padding: 0px;
-     margin: 0 px;
-     font-size: 30px;
-     list-style-type: none;
-
-}
-
-#wrap{
-   width: 900px;
-   margin: 0 auto;
-   
-}
-h3{
+/* =============== 공통 CSS =============== */
+*{
+    padding: 0px;
+    margin: 0px;
+    font-size: 30px;
+    box-sizing: border-box;
     text-align: center;
-    font-size: 50px;
 }
-#ddd{ 
-    display: flex;
-    justify-content: center;
-    
 
+li{
+    list-style-type: none;
 }
-#ddd> #inf{
-    border: 1px solid pink;
-    box-shadow: 0 0 10px pink;
-    font-size: 67px;
-    height: 80px;
-        
-    
-    
+
+
+
+/* =============== 레이아웃 =============== */
+#warp{
+    width: 900px;
+    margin: 0 auto;
 }
-#dd{
-    border: 1px solid pink;
-    box-shadow:  0 0 10px pink;
-    padding: 7px 7px 7px 7px;
-   
-}
+
+
+/* ============= 작업용 CSS ============= */
+/* *{
+    border: 1px solid red;
+} */
+
 
 
 /* ============= 리스트 ============= */
-ul > li{
+.pink{
     background-color: pink;
     display: flex;
     justify-content: space-between;
@@ -55,7 +43,50 @@ ul > li > div > button{
     border: 1px solid pink;
     box-shadow: 1px -1px 7px gray;
     font-size: 25px;
+    text-decoration: none;
 }
 
+.black{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 15px;
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+
+.black > p{
+    text-decoration: line-through;
+} 
 
 
+
+
+
+
+#a{
+    font-size: 50px;
+}
+#ddd{ 
+    display: flex;
+    margin-bottom: 30px;
+    
+
+}
+#ddd> #todoInput{
+    border: 1px solid pink;
+    box-shadow: 0 0 10px pink;
+    font-size: 67px;
+    height: 80px;
+        
+    
+    
+}
+#dd{
+    border: 1px solid pink;
+    box-shadow:  0 0 10px pink;
+    padding: 7px 7px 7px 7px;
+   
+}

@@ -182,7 +182,7 @@ function _delete(index) {
 function _pwConfirm(index){
       //패스워드 검증
      //1. 검증받을 패스워드 입력받는다.
-     let confirPw= prompt('비밀번호');
+     let confirmPw= prompt('비밀번호');
       //해당 인덱스의 비밀번호와 입력받은 비밀번호가 일치한지 체크
       if(confirmPw!=boardList[index].split(','[2])){
         alert('패스워드가 다릅니다');

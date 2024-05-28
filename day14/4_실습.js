@@ -1,3 +1,6 @@
+
+
+
 let 주차장 = [
     '',
     '',
@@ -72,13 +75,13 @@ function out(){
 
             let currentMinutes = date.getMinutes();
 
-            let currentimemin = currentHour*60+currentMinutes   
+            let currentimemin = currentHour*60+currentMinutes //차를 주차시키고 나갈 때 시간을 분으로 환산  
 
             let carHour = 주차장[i].시*1;
 
             let carMinutes = 주차장[i].분*1;
 
-            let cartimemin = carHour*60+carMinutes;        
+            let cartimemin = carHour*60+carMinutes;  //차를 주차하기 시작한 시간을 분으로 환산      
              
             let html = `<h3> 주차 시간</h3> <br/>
                     <div> ${(currentimemin-cartimemin)}분</div>

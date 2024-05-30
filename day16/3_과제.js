@@ -12,8 +12,10 @@ console.log( new Date().getDay() );
 
 // 4. new Date( 연도 , 월 , 일 ) : 사용자 정의 날짜 객체 반환
 console.log( new Date( 2023 , 4 , 20 ) ); // 2023-05-29
+
 // 5. new Date( 연도 , 월 , 0 )  : 특정 정의 날짜의 말일
 console.log( new Date( 2024 , 4 , 1 ) ); // 2024-05-01
+
 console.log( new Date( 2024 , 4 , 0 ) ); // 2024-04-말일
 
 // ============= 모든 함수에서 사용할 변수 : 전역변수 ============== //
@@ -57,7 +59,6 @@ function calPrint(){
     let endDay = date.getDate(); 
 
     // 2. year , month 변수에 저장된 날짜의 1일 요일 구하기 ( 1일 요일 앞에 공백 )
-
     let date2 = new Date( year , month-1 , 1 ); // 2024-05-01 
     let startWeek = date2.getDay();  console.log( startWeek ); // 0:일 1:월 2:화 3:수 ~~~ 6:토
     // * 1일의 요일까지 공백 출력 반복문
@@ -112,7 +113,7 @@ function monthChange( 매개변수 ){
 
 
 //등록
-function add(index){
+function add(){
     let textInput = document.querySelector('#textInput').value;
     let color= document.querySelector('#color').value;
     //     let datee=`${year}-${month}-${index}`

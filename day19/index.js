@@ -12,6 +12,7 @@ function loginState(){
     let html =``;
     if(loginNo != 0){
         
+
         //무엇을
            html +=  `<li class="nav-item"><a class="nav-link" href="info.html">내정보</a> </li>`;
            html += `<li class="nav-item"><a class="nav-link" href="#" onclick="logout()">로그아웃</a> </li>`

@@ -11,7 +11,7 @@ function loginState(){
     let nav = document.querySelector('.navbar-nav');
     let html =``;
     if(loginNo != 0){
-        
+
 
         //무엇을
            html +=  `<li class="nav-item"><a class="nav-link" href="info.html">내정보</a> </li>`;
@@ -32,4 +32,6 @@ sessionStorage.removeItem('loginNo'); //sessionStorage.removeItem('key'): 해당
 
  //2.안내 후 메인페이지로 이동
  alert('로그아웃 되었습니다.'); location.href="index.html";
+
+ 
 }

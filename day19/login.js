@@ -16,23 +16,26 @@
 
 
 */
-let memberList=[];
+
+
+
+let boardList=[];
 function login(){console.log("login()");
 //기존 localStorage 저장된 회원목록을 가져오기
-memberList=JSON.parse(localStorage.getItem('memberList'));
-if(memberList==null){memberList=[];}
+boardList=JSON.parse(localStorage.getItem('boardList'));
+if(boardList==null){boardList=[];}
 
 let id = document.querySelector('#id').value;
 let pw = document.querySelector('#pw').value;
 
 //어디에
-for(let i=0; i < memberList.length; i++){
-    let member=memberList[i];
-    if(member.id == id && member.pw ==pw){
+for(let i=0; i < boardList.length; i++){
+    let board=boardList[i];
+    if(board.sInfo == id && board.pw ==pw){
         alert('로그인 성공');
         //만약에 로그인 성공시 세션저장소 부여
-        sessionStorage.setItem('loginNo', member.no);
-        location.href= "index.html";
+        sessionStorage.setItem('loginNo', board.no);
+        location.href= "main.html";
         return;
     }
 

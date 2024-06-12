@@ -18,7 +18,7 @@ for(let i=0; i < studentList.length; i++){
         alert('로그인 성공');
         //만약에 로그인 성공시 세션저장소 부여
         sessionStorage.setItem('loginNo', student.no);
-        location.href= "main.html";
+        location.href= "board.html";
         return;
     }
 

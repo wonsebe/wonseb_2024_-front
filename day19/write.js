@@ -26,7 +26,7 @@
      }
     let boardList=[];
 
-     function _write(){
+     function write(){
         console.log("write()");
 
         //* 

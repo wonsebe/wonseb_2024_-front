@@ -55,7 +55,7 @@ studentList.forEach(function(student) {
 function deleteRow(btn) {
   var row = btn.parentNode.parentNode;
   var rowIndex = row.rowIndex - 1; // 테이블 헤더를 제외한 데이터의 인덱스
-  let msgg= confirm('학생정보를 지우시겠습니까?'); console.log(msgg);
+  let msgg= alert('학생정보를 지우시겠습니까?'); console.log(msgg);
   // 배열에서 해당 행의 데이터 삭제
   studentList.splice(rowIndex, 1);
 
@@ -67,9 +67,10 @@ function deleteRow(btn) {
 }
 
 
-var editButton = document.createElement('button');
-editButton.textContent = '학생정보수정';
+
 editButton.onclick = function() {
+  var editButton = document.createElement('button');
+editButton.textContent = '학생정보수정';
   editRow(row);
 };
 editCell.appendChild(editButton);
@@ -87,11 +88,11 @@ function edit(row) {
     var phoneInput = document.createElement('input');
     var pwInput = document.createElement('input');
 
-    noInput.value = nameCell.textContent;
+    noInput.value = noCell.textContent;
     nameInput.value = nameCell.textContent;
-    sInfoInput.value = nameCell.textContent;
-    phoneInput.value = nameCell.textContent;
-    pwInput.value = ageCell.textContent;
+    sInfoInput.value = sInfoCell.textContent;
+    phoneInput.value = phoneCell.textContent;
+    pwInput.value = pwCell.textContent;
 
     noCell.textContent = '';
     nameCell.textContent = '';
@@ -108,7 +109,7 @@ function edit(row) {
     var editButton = row.cells[2].getElementsByTagName('button')[0];
     editButton.textContent = '저장';
     editButton.onclick = function() {
-      saveRow(row, noInput.value, nameInput.value, sInfoInput.value,phoneInput.value, pwInput.value);
+      saveRow(row, noInput.value, nameInput.value, sInfoInput.value, phoneInput.value, pwInput.value);
     };
   }
   
@@ -134,7 +135,7 @@ function edit(row) {
     row.cells[4].textContent = newpw;
   
     // 수정 버튼 초기화
-    var editButton = row.cells[5].getElementsByTagName('button')[5];
+    var editButton = row.cells[2].getElementsByTagName('button')[0];
     editButton.textContent = '수정';
     editButton.onclick = function() {
       editRow(row);
